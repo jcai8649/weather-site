@@ -8,7 +8,7 @@ const forecast = (lat, long, callback) => {
         } else if (body.error){
             callback('Please enter specify valid coordinates', undefined)
         } else {
-            callback(undefined, 'The temperature is: ' + body.current.temperature + "F, and it will feel like "+ body.current.feelslike +"F. The humidity is " + body.current.humidity + "%")
+            callback(undefined, 'The temperature is: ' + body.current.temperature + "F, and it will feel like "+ body.current.feelslike +"F. The humidity is " + body.current.humidity + "%.")
         }
     }) 
 }
